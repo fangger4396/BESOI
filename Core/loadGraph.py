@@ -1,4 +1,4 @@
-'''
+"""
 Input: An ontology file in xml or ttl format.
 Output: The concept list of the ontology
 
@@ -8,7 +8,7 @@ Two types of concept lists are output: 1. only contain the name; 2. contain both
 A couple of function are provided to parse the ontology.
 The main issue is each ontology may have its own splits and delimiters.
 The user may need to develop customized functions to parse specific ontology.
-'''
+"""
 import rdflib
 
 base_query = '''

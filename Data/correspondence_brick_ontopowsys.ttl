@@ -1,0 +1,433 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix ontopowsysbeh: <http://www.theworldavatar.com/ontology/ontopowsys/PowSysBehavior.owl#> .
+@prefix ontopowsysrea: <http://www.theworldavatar.com/ontology/ontopowsys/PowSysRealization.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#ScalarQuantity> owl:equivalentClass brick:Quantity .
+
+ontopowsysbeh:AbsorbedReactivePower owl:equivalentClass brick:Reactive_Energy_Sensor .
+
+ontopowsysbeh:ActivePowerBalance owl:equivalentClass brick:Active_Chilled_Beam .
+
+ontopowsysbeh:CumulatedEnergy owl:equivalentClass brick:Energy_Zone .
+
+ontopowsysbeh:CurrentBoundary owl:equivalentClass brick:Current_Limit .
+
+ontopowsysbeh:MaximumCurrent owl:equivalentClass brick:Max_Limit .
+
+ontopowsysbeh:OutputCurrent owl:equivalentClass brick:Current_Output_Sensor .
+
+ontopowsysbeh:OutputFrequency owl:equivalentClass brick:Output_Frequency_Sensor .
+
+ontopowsysbeh:OutputVoltage owl:equivalentClass brick:Output_Voltage_Sensor .
+
+ontopowsysbeh:PowerFactor owl:equivalentClass brick:Power_Factor_Sensor .
+
+ontopowsysbeh:ReactivePower owl:equivalentClass brick:Reactive_Power_Sensor .
+
+ontopowsysbeh:VoltageMagnitude owl:equivalentClass brick:Voltage_Ratio_Setpoint .
+
+<http://www.theworldavatar.com/ontology/ontopowsys/PowSysFunction.owl#PowerGeneration> owl:equivalentClass brick:Energy_Generation_System .
+
+<http://www.theworldavatar.com/ontology/ontopowsys/PowSysPerformance.owl#FuelCosts> owl:equivalentClass brick:Fuel_Oil .
+
+ontopowsysrea:BaseTestingTemperature owl:equivalentClass brick:Temperature_Setpoint .
+
+ontopowsysrea:BusNode owl:equivalentClass brick:Bus_Riser .
+
+ontopowsysrea:Inverter owl:equivalentClass brick:Inverter .
+
+ontopowsysrea:Material owl:equivalentClass brick:Substance .
+
+ontopowsysrea:MinimumUpTime owl:equivalentClass brick:Min_Limit .
+
+ontopowsysrea:OutputRatedFrequency owl:equivalentClass brick:Variable_Frequency_Drive .
+
+ontopowsysrea:PowerGenerator owl:equivalentClass brick:Generator_Room .
+
+ontopowsysrea:ShutdownTime owl:equivalentClass brick:System_Shutdown_Status .
+
+ontopowsysrea:Susceptance owl:equivalentClass <https://brickschema.org/schema/BrickShape#TiltShape> .
+
+ontopowsysrea:VoltageRegulator owl:equivalentClass brick:Battery_Voltage_Sensor .
+
+ontopowsysrea:WindPlant owl:equivalentClass <https://brickschema.org/schema/BrickShape#Wind_DirectionShape> .
+
+brick:Active_Chilled_Beam owl:equivalentClass ontopowsysbeh:ActivePowerBalance .
+
+brick:Active_Power_Sensor owl:equivalentClass ontopowsysbeh:ActivePower .
+
+brick:Air owl:equivalentClass ontopowsysrea:CompressedAir .
+
+brick:Air_Diffuser owl:equivalentClass ontopowsysrea:CompressedAir .
+
+brick:Air_Plenum owl:equivalentClass ontopowsysrea:CompressedAir .
+
+brick:Air_System owl:equivalentClass <http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#System> .
+
+brick:Availability_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Battery owl:equivalentClass ontopowsysrea:Battery .
+
+brick:Battery_Energy_Storage_System owl:equivalentClass ontopowsysrea:EnergyStorageSystem .
+
+brick:Battery_Room owl:equivalentClass ontopowsysrea:Battery .
+
+brick:Battery_Voltage_Sensor owl:equivalentClass ontopowsysrea:VoltageRegulator .
+
+brick:Breaker_Panel owl:equivalentClass ontopowsysbeh:BreakerStatus .
+
+brick:Building owl:equivalentClass ontopowsysrea:Building .
+
+brick:Building_Air owl:equivalentClass ontopowsysrea:Building .
+
+brick:Building_Meter owl:equivalentClass ontopowsysrea:Building .
+
+brick:Bus_Riser owl:equivalentClass ontopowsysrea:BusNode .
+
+brick:Current_Limit owl:equivalentClass ontopowsysbeh:CurrentBoundary .
+
+brick:Current_Output_Sensor owl:equivalentClass ontopowsysbeh:OutputCurrent .
+
+brick:Damper_Position_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Discharge_Air owl:equivalentClass ontopowsysrea:RatedDischargePower .
+
+brick:Discharge_Air_Plenum owl:equivalentClass ontopowsysrea:RatedDischargePower .
+
+brick:Discharge_Fan owl:equivalentClass ontopowsysrea:RatedDischargePower .
+
+brick:Disconnect_Switch owl:equivalentClass ontopowsysrea:Switch .
+
+brick:Distribution_Frame owl:equivalentClass ontopowsysrea:DistributionSubstation .
+
+brick:ESS_Panel owl:equivalentClass ontopowsysrea:PanelArea .
+
+brick:Electrical_Equipment owl:equivalentClass ontopowsysrea:ElectricalEquipment .
+
+brick:Electrical_Meter owl:equivalentClass ontopowsysrea:ElectricalLine .
+
+brick:Electrical_Room owl:equivalentClass ontopowsysrea:ElectricalEquipment .
+
+brick:Electrical_System owl:equivalentClass ontopowsysrea:ElectricalEquipment .
+
+brick:Emergency_Power_Off_System_Status owl:equivalentClass ontopowsysbeh:BreakerStatus .
+
+brick:Enable_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Energy_Generation_System owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysFunction.owl#PowerGeneration> .
+
+brick:Energy_Sensor owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysFunction.owl#EnergyMetering> .
+
+brick:Energy_Storage owl:equivalentClass ontopowsysrea:EnergyStorageSystem .
+
+brick:Energy_Storage_System owl:equivalentClass ontopowsysrea:EnergyStorageSystem .
+
+brick:Energy_System owl:equivalentClass ontopowsysrea:EnergyStorageSystem .
+
+brick:Energy_Usage_Sensor owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysFunction.owl#EnergyMetering> .
+
+brick:Energy_Zone owl:equivalentClass ontopowsysbeh:CumulatedEnergy .
+
+brick:Equipment owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysPerformance.owl#EquipmentCosts> .
+
+brick:Equipment_Room owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysPerformance.owl#EquipmentCosts> .
+
+brick:Flow_Setpoint owl:equivalentClass ontopowsysrea:FlowDirection .
+
+brick:Frequency_Command owl:equivalentClass ontopowsysbeh:Frequency .
+
+brick:Frequency_Sensor owl:equivalentClass ontopowsysbeh:Frequency .
+
+brick:Frequency_Setpoint owl:equivalentClass ontopowsysbeh:Frequency .
+
+brick:Fuel_Oil owl:equivalentClass <http://www.theworldavatar.com/ontology/ontopowsys/PowSysPerformance.owl#FuelCosts> .
+
+brick:Gas_Distribution owl:equivalentClass ontopowsysrea:DistributionSubstation .
+
+brick:Generator_Room owl:equivalentClass ontopowsysrea:PowerGenerator .
+
+brick:Hold_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Humidity_Alarm owl:equivalentClass ontopowsysrea:HumidityLosses .
+
+brick:Humidity_Parameter owl:equivalentClass ontopowsysrea:HumidityLosses .
+
+brick:Humidity_Sensor owl:equivalentClass ontopowsysrea:HumidityLosses .
+
+brick:Humidity_Setpoint owl:equivalentClass ontopowsysrea:HumidityLosses .
+
+brick:Inverter owl:equivalentClass ontopowsysrea:Inverter .
+
+brick:Lighting_Equipment owl:equivalentClass ontopowsysrea:ElectricalEquipment .
+
+brick:Lighting_System owl:equivalentClass ontopowsysrea:PowerSystem .
+
+brick:Max_Limit owl:equivalentClass ontopowsysbeh:MaximumCurrent .
+
+brick:Meter owl:equivalentClass ontopowsysrea:EnergyMeter .
+
+brick:Min_Limit owl:equivalentClass ontopowsysrea:MinimumUpTime .
+
+brick:Mode_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Natural_Gas owl:equivalentClass ontopowsysrea:SyntheticNaturalGas .
+
+brick:Natural_Gas_Boiler owl:equivalentClass ontopowsysrea:SyntheticNaturalGas .
+
+brick:Noncondensing_Natural_Gas_Boiler owl:equivalentClass ontopowsysrea:SyntheticNaturalGas .
+
+brick:Off_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:On_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Operating_Mode_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Output_Frequency_Sensor owl:equivalentClass ontopowsysbeh:OutputFrequency .
+
+brick:Output_Voltage_Sensor owl:equivalentClass ontopowsysbeh:OutputVoltage .
+
+brick:Overridden_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:PVT_Panel owl:equivalentClass ontopowsysrea:PanelArea .
+
+brick:PV_Panel owl:equivalentClass ontopowsysrea:PhotovoltaicPanel .
+
+brick:Photovoltaic_Array owl:equivalentClass ontopowsysrea:PhotovoltaicPanel .
+
+brick:Power_Factor_Sensor owl:equivalentClass ontopowsysbeh:PowerFactor .
+
+brick:Pressure_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Pump owl:equivalentClass ontopowsysrea:ElectricalPump .
+
+brick:Pump_Command owl:equivalentClass ontopowsysrea:PumpHydro .
+
+brick:Pump_Room owl:equivalentClass ontopowsysrea:ElectricalPump .
+
+brick:Pump_VFD owl:equivalentClass ontopowsysrea:ElectricalPump .
+
+brick:Quantity owl:equivalentClass <http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#ScalarQuantity> .
+
+brick:RC_Panel owl:equivalentClass ontopowsysrea:PhotovoltaicPanel .
+
+brick:Radiant_Panel owl:equivalentClass ontopowsysrea:PhotovoltaicPanel .
+
+brick:Reactive_Energy_Sensor owl:equivalentClass ontopowsysbeh:AbsorbedReactivePower .
+
+brick:Reactive_Power_Sensor owl:equivalentClass ontopowsysbeh:ReactivePower .
+
+brick:Safety_System owl:equivalentClass <http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#System> .
+
+brick:Solar_Radiance_Sensor owl:equivalentClass ontopowsysrea:SolarPlant .
+
+brick:Solar_Thermal_Collector owl:equivalentClass ontopowsysrea:SolarPlant .
+
+brick:Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Storage_Room owl:equivalentClass ontopowsysrea:EnergyStorageSystem .
+
+brick:Substance owl:equivalentClass ontopowsysrea:Material .
+
+brick:Switch owl:equivalentClass ontopowsysrea:Switch .
+
+brick:Switch_Room owl:equivalentClass ontopowsysrea:Switch .
+
+brick:Switch_Status owl:equivalentClass ontopowsysrea:Switch .
+
+brick:Switchgear owl:equivalentClass ontopowsysrea:Switch .
+
+brick:System owl:equivalentClass <http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#System> .
+
+brick:System_Shutdown_Status owl:equivalentClass ontopowsysrea:ShutdownTime .
+
+brick:System_Status owl:equivalentClass <http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#System> .
+
+brick:Temperature_Setpoint owl:equivalentClass ontopowsysrea:BaseTestingTemperature .
+
+brick:Thermal_Power_Meter owl:equivalentClass ontopowsysrea:EnergyMeter .
+
+brick:Transformer owl:equivalentClass ontopowsysrea:PowerTransformer .
+
+brick:Transformer_Room owl:equivalentClass ontopowsysrea:PowerTransformer .
+
+brick:Unoccupied_Mode_Status owl:equivalentClass ontopowsysrea:ControllableStatus .
+
+brick:Variable_Frequency_Drive owl:equivalentClass ontopowsysrea:OutputRatedFrequency .
+
+brick:Voltage_Alarm owl:equivalentClass ontopowsysbeh:Voltage .
+
+brick:Voltage_Ratio_Setpoint owl:equivalentClass ontopowsysbeh:VoltageMagnitude .
+
+brick:Voltage_Sensor owl:equivalentClass ontopowsysbeh:Voltage .
+
+brick:Water_Pump owl:equivalentClass ontopowsysrea:PumpHydro .
+
+brick:Water_System owl:equivalentClass ontopowsysrea:PowerSystem .
+
+<https://brickschema.org/schema/BrickShape#Active_EnergyShape> owl:equivalentClass ontopowsysbeh:ActivePower .
+
+<https://brickschema.org/schema/BrickShape#Active_PowerShape> owl:equivalentClass ontopowsysbeh:ActivePower .
+
+<https://brickschema.org/schema/BrickShape#Current_AngleShape> owl:equivalentClass ontopowsysbeh:Current .
+
+<https://brickschema.org/schema/BrickShape#Current_ImbalanceShape> owl:equivalentClass ontopowsysbeh:Current .
+
+<https://brickschema.org/schema/BrickShape#Electric_CurrentShape> owl:equivalentClass ontopowsysrea:ElectricalEquipment .
+
+<https://brickschema.org/schema/BrickShape#Electric_EnergyShape> owl:equivalentClass ontopowsysrea:ElectricalLine .
+
+<https://brickschema.org/schema/BrickShape#Electric_PowerShape> owl:equivalentClass ontopowsysrea:ElectricalLine .
+
+<https://brickschema.org/schema/BrickShape#Flow_LossShape> owl:equivalentClass ontopowsysrea:FlowDirection .
+
+<https://brickschema.org/schema/BrickShape#Reactive_EnergyShape> owl:equivalentClass ontopowsysrea:ReactiveCompensator .
+
+<https://brickschema.org/schema/BrickShape#Reactive_PowerShape> owl:equivalentClass ontopowsysrea:ReactiveCompensator .
+
+<https://brickschema.org/schema/BrickShape#Solar_IrradianceShape> owl:equivalentClass ontopowsysrea:SolarPlant .
+
+<https://brickschema.org/schema/BrickShape#Solar_RadianceShape> owl:equivalentClass ontopowsysrea:SolarPlant .
+
+<https://brickschema.org/schema/BrickShape#Thermal_EnergyShape> owl:equivalentClass ontopowsysrea:ThermalEnergyStorage .
+
+<https://brickschema.org/schema/BrickShape#Thermal_PowerShape> owl:equivalentClass ontopowsysrea:ThermalEnergyStorage .
+
+<https://brickschema.org/schema/BrickShape#TiltShape> owl:equivalentClass ontopowsysrea:Susceptance .
+
+<https://brickschema.org/schema/BrickShape#Voltage_AngleShape> owl:equivalentClass ontopowsysbeh:Voltage .
+
+<https://brickschema.org/schema/BrickShape#Voltage_ImbalanceShape> owl:equivalentClass ontopowsysbeh:Voltage .
+
+<https://brickschema.org/schema/BrickShape#Wind_DirectionShape> owl:equivalentClass ontopowsysrea:WindPlant .
+
+ontopowsysbeh:BreakerStatus owl:equivalentClass brick:Breaker_Panel,
+        brick:Emergency_Power_Off_System_Status .
+
+ontopowsysbeh:Current owl:equivalentClass <https://brickschema.org/schema/BrickShape#Current_AngleShape>,
+        <https://brickschema.org/schema/BrickShape#Current_ImbalanceShape> .
+
+<http://www.theworldavatar.com/ontology/ontopowsys/PowSysFunction.owl#EnergyMetering> owl:equivalentClass brick:Energy_Sensor,
+        brick:Energy_Usage_Sensor .
+
+<http://www.theworldavatar.com/ontology/ontopowsys/PowSysPerformance.owl#EquipmentCosts> owl:equivalentClass brick:Equipment,
+        brick:Equipment_Room .
+
+ontopowsysrea:Battery owl:equivalentClass brick:Battery,
+        brick:Battery_Room .
+
+ontopowsysrea:DistributionSubstation owl:equivalentClass brick:Distribution_Frame,
+        brick:Gas_Distribution .
+
+ontopowsysrea:EnergyMeter owl:equivalentClass brick:Meter,
+        brick:Thermal_Power_Meter .
+
+ontopowsysrea:FlowDirection owl:equivalentClass brick:Flow_Setpoint,
+        <https://brickschema.org/schema/BrickShape#Flow_LossShape> .
+
+ontopowsysrea:PanelArea owl:equivalentClass brick:ESS_Panel,
+        brick:PVT_Panel .
+
+ontopowsysrea:PowerSystem owl:equivalentClass brick:Lighting_System,
+        brick:Water_System .
+
+ontopowsysrea:PowerTransformer owl:equivalentClass brick:Transformer,
+        brick:Transformer_Room .
+
+ontopowsysrea:PumpHydro owl:equivalentClass brick:Pump_Command,
+        brick:Water_Pump .
+
+ontopowsysrea:ReactiveCompensator owl:equivalentClass <https://brickschema.org/schema/BrickShape#Reactive_EnergyShape>,
+        <https://brickschema.org/schema/BrickShape#Reactive_PowerShape> .
+
+ontopowsysrea:ThermalEnergyStorage owl:equivalentClass <https://brickschema.org/schema/BrickShape#Thermal_EnergyShape>,
+        <https://brickschema.org/schema/BrickShape#Thermal_PowerShape> .
+
+ontopowsysbeh:ActivePower owl:equivalentClass brick:Active_Power_Sensor,
+        <https://brickschema.org/schema/BrickShape#Active_EnergyShape>,
+        <https://brickschema.org/schema/BrickShape#Active_PowerShape> .
+
+ontopowsysbeh:Frequency owl:equivalentClass brick:Frequency_Command,
+        brick:Frequency_Sensor,
+        brick:Frequency_Setpoint .
+
+ontopowsysrea:Building owl:equivalentClass brick:Building,
+        brick:Building_Air,
+        brick:Building_Meter .
+
+ontopowsysrea:CompressedAir owl:equivalentClass brick:Air,
+        brick:Air_Diffuser,
+        brick:Air_Plenum .
+
+ontopowsysrea:ElectricalLine owl:equivalentClass brick:Electrical_Meter,
+        <https://brickschema.org/schema/BrickShape#Electric_EnergyShape>,
+        <https://brickschema.org/schema/BrickShape#Electric_PowerShape> .
+
+ontopowsysrea:ElectricalPump owl:equivalentClass brick:Pump,
+        brick:Pump_Room,
+        brick:Pump_VFD .
+
+ontopowsysrea:RatedDischargePower owl:equivalentClass brick:Discharge_Air,
+        brick:Discharge_Air_Plenum,
+        brick:Discharge_Fan .
+
+ontopowsysrea:SyntheticNaturalGas owl:equivalentClass brick:Natural_Gas,
+        brick:Natural_Gas_Boiler,
+        brick:Noncondensing_Natural_Gas_Boiler .
+
+<http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#System> owl:equivalentClass brick:Air_System,
+        brick:Safety_System,
+        brick:System,
+        brick:System_Status .
+
+ontopowsysbeh:Voltage owl:equivalentClass brick:Voltage_Alarm,
+        brick:Voltage_Sensor,
+        <https://brickschema.org/schema/BrickShape#Voltage_AngleShape>,
+        <https://brickschema.org/schema/BrickShape#Voltage_ImbalanceShape> .
+
+ontopowsysrea:HumidityLosses owl:equivalentClass brick:Humidity_Alarm,
+        brick:Humidity_Parameter,
+        brick:Humidity_Sensor,
+        brick:Humidity_Setpoint .
+
+ontopowsysrea:PhotovoltaicPanel owl:equivalentClass brick:PV_Panel,
+        brick:Photovoltaic_Array,
+        brick:RC_Panel,
+        brick:Radiant_Panel .
+
+ontopowsysrea:SolarPlant owl:equivalentClass brick:Solar_Radiance_Sensor,
+        brick:Solar_Thermal_Collector,
+        <https://brickschema.org/schema/BrickShape#Solar_IrradianceShape>,
+        <https://brickschema.org/schema/BrickShape#Solar_RadianceShape> .
+
+ontopowsysrea:ElectricalEquipment owl:equivalentClass brick:Electrical_Equipment,
+        brick:Electrical_Room,
+        brick:Electrical_System,
+        brick:Lighting_Equipment,
+        <https://brickschema.org/schema/BrickShape#Electric_CurrentShape> .
+
+ontopowsysrea:EnergyStorageSystem owl:equivalentClass brick:Battery_Energy_Storage_System,
+        brick:Energy_Storage,
+        brick:Energy_Storage_System,
+        brick:Energy_System,
+        brick:Storage_Room .
+
+ontopowsysrea:Switch owl:equivalentClass brick:Disconnect_Switch,
+        brick:Switch,
+        brick:Switch_Room,
+        brick:Switch_Status,
+        brick:Switchgear .
+
+ontopowsysrea:ControllableStatus owl:equivalentClass brick:Availability_Status,
+        brick:Damper_Position_Status,
+        brick:Enable_Status,
+        brick:Hold_Status,
+        brick:Mode_Status,
+        brick:Off_Status,
+        brick:On_Status,
+        brick:Operating_Mode_Status,
+        brick:Overridden_Status,
+        brick:Pressure_Status,
+        brick:Status,
+        brick:Unoccupied_Mode_Status .
+

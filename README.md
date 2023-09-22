@@ -14,4 +14,4 @@ It takes the ontologies from different domains as input, it outputs an integrate
 + pip packages: `requirements.txt`
 
 ### Install
-`git clone https://github.com/fangger4396/Cloze.git)https://github.com/fangger4396/BESOI.git`
+`git clone https://github.com/fangger4396/BESOI.git`
